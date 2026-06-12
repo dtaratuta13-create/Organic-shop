@@ -44,8 +44,8 @@ a {
 }
 
 .logo-icon {
-  width: 112px;
-  height: 48px;
+  width: 142px;
+  height: 60px;
 }
 
 /* =========================
@@ -116,9 +116,7 @@ button:hover {
 }
 
 .header-right {
-  display: flex;
-  align-items: center;
-  gap: 32px;
+  display: none;
 }
 /* =========================
    MOBILE CONTROLS
@@ -260,6 +258,24 @@ button:hover {
   .mobile-menu-order-btn {
     width: 222px;
   }
+
+  .mobile-menu-top .logo {
+    display: none;
+  }
+}
+
+/* =========================
+   OPEN MENU STATE
+========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .header:has(+ .mobile-menu.is-open) .mobile-order-btn {
+    display: none;
+  }
+
+  .mobile-menu-top {
+    justify-content: flex-end;
+  }
 }
 
 /* =========================
@@ -277,7 +293,11 @@ button:hover {
     display: flex;
     align-items: center;
   }
-
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
   .mobile-controls {
     display: none;
   }
