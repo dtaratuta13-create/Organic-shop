@@ -19,3 +19,4 @@ Assortment
 Feedbacks
 FAQs
 Contacts
+Footer
