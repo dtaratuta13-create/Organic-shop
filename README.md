@@ -14,7 +14,7 @@ Assortment — @Виктория Бекешко
 
 Feedbacks/FAQs — @Женя Скрыпников @Vladyslav Voloshyn
 
-Contacts/Footer - @Nazar Zaverukha
+Contacts/Footer - @Максим Палагнюк
 
 SVG - @Максим Палагнюк
 
