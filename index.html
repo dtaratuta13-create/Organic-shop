@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Organic Shop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero"></section>
+
+        <!-- Mission -->
+        <section class="mission"></section>
+
+        <!-- Benefits -->
+        <section class="benefits"></section>
+
+        <!-- Assortment -->
+        <section class="assortment"></section>
+
+        <!-- Feedbacks -->
+        <section class="feedbacks"></section>
+
+        <!-- FAQs -->
+        <section class="faqs"></section>
+
+        <!-- Contacts -->
+        <section class="contact-page" id="contact">
+            <div class="container contact-container">
+
+                <div class="contact-form-wrapper">
+                    <p class="contact-subtitle">Contacts</p>
+                    <h2 class="contact-title">Get in Touch</h2>
+                    <p class="contact-desc">We'd love to hear from you anytime!</p>
+
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <a href="mailto:hello@organicstore.com" class="contact-link">
+                                <svg width="24" height="24">
+                                    <use href="./image/icons.svg#icon-envelope"></use>
+                                </svg>
+                                hello@organicstore.com
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="tel:+15553291024" class="contact-link">
+                                <svg width="24" height="24">
+                                    <use href="./image/icons.svg#icon-phone"></use>
+                                </svg>
+                                +1 (555) 329-1024
+                            </a>
+                        </li>
+                    </ul>
+
+                    <form class="contact-form">
+
+                        <label class="contact-label">
+                            Name
+                            <input class="contact-input" type="text" name="name" placeholder="Sarah"
+                                pattern="^[a-zA-Z\s\.]{5,64}$" required />
+                        </label>
+
+                        <label class="contact-label">
+                            Email
+                            <input class="contact-input" type="email" name="email" placeholder="hello@organic.com"
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+                        </label>
+
+                        <label class="contact-label">
+                            Message
+                            <textarea class="contact-textarea" name="message" placeholder="Type your message..."
+                                maxlength="500" required></textarea>
+                        </label>
+
+                        <button class="contact-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <img class="contact-img" src="./image/contactsPhoto.jpg" alt="Our team" width="343" />
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
