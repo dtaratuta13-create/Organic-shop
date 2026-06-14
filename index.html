@@ -24,12 +24,15 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/assortmens.css" />
     <link rel="stylesheet" href="./css/faqs.css" />
+    <link rel="stylesheet" href="./css/benefits.css" />
   </head>
 
   <body>
@@ -171,7 +174,55 @@
     </section>
 
       <!-- Benefits -->
-      <section class="benefits"></section>
+      <section class="benefits" id="benefits">
+        <div class="container">
+          <img class="benefits-images"
+          src="./images/benefits/organic-food.jpg"
+          srcset="./images/benefits/organic-food.jpg  1x,
+          ./images/benefits/organic-food2x.jpg 2x "
+          alt="Fresh organic vegetables, herbs, honey, bread and eco-friendly packaging">
+          <div class="benefits-info">
+            <div class="benefits-title">
+              <h2 class="title">Why Choose Organic?</h2>
+              <p class="text">Organic products offer a healthier choice for you and your family.
+                 With no synthetic pesticides or GMOs, you can enjoy better nutrition and 
+                 natural flavors while supporting sustainable farming practices.</p>
+            </div>
+            <div class="benefits-content">
+             <ul class="benefits-list">
+              <li class="benefits-item">
+                 <svg width="48" height="48">
+              <use href="./images/icons.svg#health"></use>
+            </svg>
+            <h3 class="subtitle">Better for Your Health</h3>
+            <p class="text">Organic foods are grown without synthetic chemicals, making them safer for your body. They're rich in antioxidants and nutrients that support your immune system and long-term well-being.</p>
+              </li>
+               <li class="benefits-item">
+                 <svg width="48" height="48">
+              <use href="./images/icons.svg#basketball"></use>
+            </svg>
+              <h3 class="subtitle">Protecting the Planet</h3>
+            <p class="text">Organic farming reduces pollution, conserves water, and improves soil health. By choosing organic, you're helping build a cleaner, more sustainable environment for future generations.</p>
+              </li>
+               <li class="benefits-item">
+                 <svg width="48" height="48">
+              <use href="./images/icons.svg#restaurant"></use>
+            </svg>
+              <h3 class="subtitle">Fruits & Vegetables</h3>
+            <p class="text">Freshly picked organic produce delivered straight from local farms to your table.</p>
+              </li>
+               <li class="benefits-item">
+                 <svg width="48" height="48">
+              <use href="./images/icons.svg#cheese"></use>
+            </svg>
+              <h3 class="subtitle">Dairy Products</h3>
+            <p class="text">Creamy, organic dairy options that are both delicious and ethically sourced.</p>
+              </li>
+             </ul>
+          </div>
+        </div>
+      </section>
+      
 
       <!-- Assortment -->
       <section class="section assortment" id="assortment">
