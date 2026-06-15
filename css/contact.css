@@ -5,8 +5,11 @@
 }
 
 .contact-subtitle {
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #010400;
     margin-bottom: 16px;
 }
 
@@ -21,7 +24,11 @@
 }
 
 .contact-desc {
-    font-size: 16px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #010400;
     margin-bottom: 32px;
 }
 
@@ -112,7 +119,7 @@
 .contact-btn {
     width: 100%;
     padding: 6px 12px;
-    height: 36px;
+    height: 40px;
     background-color: #1a5901;
     color: #fff;
     border: 1px solid #1a5901;
@@ -133,9 +140,11 @@
 }
 
 .contact-img {
-    width: 100%;
-    height: auto;
+    width: 343px;
+    height: 343px;
+    object-fit: cover;
     display: block;
+    margin: 0 auto;
 }
 
 /* === TABLET === */
@@ -149,6 +158,14 @@
         display: block;
         margin: 24px auto 0;
     }
+
+    .contact-img {
+        width: 100%;
+        height: auto;
+        /*object-fit: cover;
+        display: block;
+        margin: 0 auto;*/
+    }
 }
 
 /* === DESKTOP === */
@@ -161,7 +178,7 @@
         display: flex;
         flex-direction: row;
         gap: 24px;
-        align-items: flex-start;
+        align-items: stretch;
         max-width: 1312px;
         margin: 0 auto;
     }
@@ -172,9 +189,11 @@
 
     .contact-img {
         width: 644px;
-        height: 757px;
-        object-fit: cover;
+        /*height: 100%;*/
         flex-shrink: 0;
+        object-fit: cover;
+        object-position: top;
+        align-self: stretch;
     }
 
     .contact-title {
