@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/feedbacks.css" />
   </head>
 
   <body>
@@ -41,71 +42,289 @@
 
       <!-- Feedbacks -->
       <section class="feedbacks">
-        <h2 class="feedbacks">What Our Customers Say</h2>
-        <p class="feedbacks-title">
-          We’re proud to grow a community that values health, sustainability,
-          and real flavor. Read what our happy customers have to say about their
-          experience with our organic products.
-        </p>
+        <div class="container">
+          <h2 class="feedbacks-main-title">What Our Customers Say</h2>
+          <p class="feedbacks-desc">
+            We’re proud to grow a community that values health, sustainability,
+            and real flavor. Read what our happy customers have to say about
+            their experience with our organic products.
+          </p>
 
-        <ul>
-          <li>
-            <p class="feedbacks-title">
-              Their eco-friendly packaging is a big plus for me. Highly
-              recommend!
-            </p>
-            <p>Tony Lee</p>
-          </li>
-          <li>
-            <p class="feedbacks-title">
-              "I absolutely love the variety of organic produce available here.
-              Everything is fresh and bursting with flavor!"
-            </p>
-            <p>Emily Johnson</p>
-          </li>
-          <li>
-            <p class="feedbacks-title">
-              "The staff is incredibly knowledgeable and always willing to help
-              me find what I need. Great service!"
-            </p>
-            <p>Michael Smith</p>
-          </li>
-          <li>
-            <p class="feedbacks-title">
-              "I've noticed a significant improvement in my health since
-              switching to their organic products. Highly recommend!"
-            </p>
-            <p>Sarah Davis</p>
-          </li>
-          <li>
-            <p class="feedbacks-title">
-              "The range of organic snacks is fantastic! Perfect for my kids,
-              who love them and I feel good about giving them healthy options."
-            </p>
-            <p>David Brown</p>
-          </li>
-          <li>
-            <p class="feedbacks-title">
-              "I appreciate that they source local ingredients. It makes me feel
-              connected to the community!"
-            </p>
-            <p>Jessica Wilson</p>
-          </li>
-          <li>
-            <p class="feedbacks-title">
-              "The prices are fair for the quality of food. I never feel guilty
-              about spending a little more here."
-            </p>
-            <p>Andrew Lee</p>
-          </li>
-          <li>
-            <p class="feedbacks-title">
-              "Their eco-friendly packaging is a big plus for me. It's nice to
-              support a business that cares about the environment!"
-            </p>
-            <p>Laura Kim</p>
-          </li>
-        </ul>
+          <ul class="feedbacks-list">
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                Their eco-friendly packaging is a big plus for me. Highly
+                recommend!
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/tony.jpg"
+                  alt="Tony Lee"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Tony Lee</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "I absolutely love the variety of organic produce available
+                here. Everything is fresh and bursting with flavor!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/emily.jpg"
+                  alt="Emily Johnson"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Emily Johnson</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "The staff is incredibly knowledgeable and always willing to
+                help me find what I need. Great service!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/michael.jpg"
+                  alt="Michael Smith"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Michael Smith</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "I've noticed a significant improvement in my health since
+                switching to their organic products. Highly recommend!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/sarah.jpg"
+                  alt="Sarah Davis"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Sarah Davis</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "The range of organic snacks is fantastic! Perfect for my kids,
+                who love them and I feel good about giving them healthy
+                options."
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/david.jpg"
+                  alt="David Brown"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">David Brown</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "I appreciate that they source local ingredients. It makes me
+                feel connected to the community!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/jessica.jpg"
+                  alt="Jessica Wilson"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Jessica Wilson</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "The prices are fair for the quality of food. I never feel
+                guilty about spending a little more here."
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/andrew.jpg"
+                  alt="Andrew Lee"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Andrew Lee</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "Their eco-friendly packaging is a big plus for me. It's nice to
+                support a business that cares about the environment!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/laura.jpg"
+                  alt="Laura Kim"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Laura Kim</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- FAQs -->
