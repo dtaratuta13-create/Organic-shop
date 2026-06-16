@@ -148,10 +148,10 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero"></section>
+      <section class="hero" id="home"></section>
 
     <!-- Mission Iryna Valchyshyn-->
-    <section class="mission">
+    <section class="mission" id="mission">
       <div class="container">
         <div class="content-our-mission">
 
@@ -481,7 +481,7 @@
       </section>
 
       <!-- Feedbacks -->
-      <section class="feedbacks">
+      <section class="feedbacks" id="feedbacks">
         <div class="container">
           <h2 class="feedbacks-main-title">What Our Customers Say</h2>
           <p class="feedbacks-desc">
@@ -768,7 +768,7 @@
       </section>
 
       <!-- FAQs -->
-      <section class="faqs">
+      <section class="faqs" id="faq">
         <div class=" container faq-container">
           <div class="faq-info">
             <h2 class="faq-title">FAQs</h2>
@@ -894,5 +894,29 @@
     </main>
 
     <footer></footer>
+
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const closeBtn = document.querySelector('.close-btn');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+      // Открыть меню
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('is-open');
+      });
+
+      // Закрыть меню
+      closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-open');
+      });
+
+      // Закрыть меню при клике на ссылку
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('is-open');
+        });
+      });
+    </script>
   </body>
 </html>
