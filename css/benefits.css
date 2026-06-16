@@ -108,9 +108,29 @@
   .benefits-images {
     width: 704px;
     height: 487px;
+    margin-bottom: 32px;
+  }
+
+  .benefits-title {
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .benefits-title .title {
+    font-size: 36px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .benefits-title .text {
+    font-size: 18px;
+    line-height: 1.5;
+    white-space: normal;
+    max-width: 100%;
   }
 
   .benefits-list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px 16px;
@@ -160,6 +180,11 @@
     flex-direction: column;
     gap: 24px;
     margin-bottom: 0;
+  }
+
+  .benefits-title .title {
+     font-size: 38px;
+    white-space: normal;
   }
 
   .benefits-list {
