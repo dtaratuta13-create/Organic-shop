@@ -66,7 +66,9 @@
     line-height: 150%;
     color: #010400;
     height: 36px;
-    border: 1px solid #fff;;
+    background-color: #fff;
+    border: 1px solid #fff;
+    transition: color 0.3s, box-shadow 0.3s;
     border-radius: 6px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     align-items: center;
