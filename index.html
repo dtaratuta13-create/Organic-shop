@@ -1,5 +1,3 @@
-<!doctype html>
-<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,19 +18,92 @@
       href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/assortmens.css" />
     <link rel="stylesheet" href="./css/faqs.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/benefits.css" />
-     <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/feedbacks.css" 
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/feedbacks.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
 
-  <body>
+
+    <!-- BURGER MENU -->
+
+    <!--
+  Для відкриття меню:
+  class="mobile-menu is-open"
+
+  Для закриття:
+  class="mobile-menu"
+  -->
+
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu-top">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="Organic Shop home page"
+          >
+            <svg class="logo-icon" width="142" height="60">
+              <use href="./images/icons.svg#CompanyLogo"></use>
+            </svg>
+          </a>
+
+          <button class="close-btn" type="button" aria-label="Close menu">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+
+            <li>
+              <a href="#mission">Mission</a>
+            </li>
+
+            <li>
+              <a href="#benefits">Benefits</a>
+            </li>
+
+            <li>
+              <a href="#assortment">Assortment</a>
+            </li>
+
+            <li>
+              <a href="#feedbacks">Feedbacks</a>
+            </li>
+
+            <li>
+              <a href="#faq">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#assortment" class="order-btn mobile-menu-order-btn">
+          Order
+        </a>
+      </div>
+    </div>
     <header class="header">
       <div class="header-container">
         <!-- LOGO -->
@@ -482,6 +553,259 @@
           </ul>
         </div>
       </section>
+      <section class="section assortment" id="assortment">
+        <div class="container">
+          <h3 class="assortment-subtitle">Assortment</h3>
+          <h2 class="title">Explore Our Delicious Organic Product Range</h2>
+          <ul class="assortment-list">
+            <li class="assortment-item">
+              <article class="assortment-card">
+                <img
+                  class="assortment-image"
+                  src="./images/assortment/gala-apples.jpg"
+                  srcset="
+                    ./images/assortment/gala-apples.jpg   1x,
+                    ./images/assortment/gala-apples2x.jpg 2x
+                  "
+                  alt="Organic Gala Apples"
+                />
+                <div class="assortment-info">
+                  <div class="assortment-content">
+                    <h4 class="assortment-card-title">Organic Gala Apples</h4>
+                    <p class="assortment-card-description">
+                      Juicy, crisp, and sweet apples grown without pesticides.
+                    </p>
+                  </div>
+                  <div class="assortment-price">
+                    <data class="assortment-price-value" value="3.50"
+                      >$3.50</data
+                    >
+                    <span class="assortment-price-unit">per 1 pound</span>
+                  </div>
+                </div>
+                <button class="assortment-card-button" type="button">
+                  Add to cart
+                </button>
+              </article>
+            </li>
+            <li class="assortment-item">
+              <article class="assortment-card">
+                <img
+                  class="assortment-image"
+                  src="./images/assortment/spinach.jpg"
+                  srcset="
+                    ./images/assortment/spinach.jpg   1x,
+                    ./images/assortment/spinach2x.jpg 2x
+                  "
+                  alt="Fresh Organic Spinach"
+                />
+                <div class="assortment-info">
+                  <div class="assortment-content">
+                    <h4 class="assortment-card-title">Fresh Organic Spinach</h4>
+                    <p class="assortment-card-description">
+                      Young spinach leaves hand-picked from a local organic
+                      farm.
+                    </p>
+                  </div>
+                  <div class="assortment-price">
+                    <data class="assortment-price-value" value="2.80"
+                      >$2.80</data
+                    >
+                    <span class="assortment-price-unit">per bunch</span>
+                  </div>
+                </div>
+                <button class="assortment-card-button" type="button">
+                  Add to cart
+                </button>
+              </article>
+            </li>
+            <li class="assortment-item">
+              <article class="assortment-card">
+                <img
+                  class="assortment-image"
+                  src="./images/assortment/eggs.jpg"
+                  srcset="./images/assortment/eggs.jpg 1x, ./images/assortment/eggs2x.jpg 2x"
+                  alt="Free-Range Organic Eggs"
+                />
+                <div class="assortment-info">
+                  <div class="assortment-content">
+                    <h4 class="assortment-card-title">
+                      Free-Range Organic Eggs
+                    </h4>
+                    <p class="assortment-card-description">
+                      Eggs from free-range hens fed with natural feed.
+                    </p>
+                  </div>
+                  <div class="assortment-price">
+                    <data class="assortment-price-value" value="5.00"
+                      >$5.00</data
+                    >
+                    <span class="assortment-price-unit">per dozen</span>
+                  </div>
+                </div>
+                <button class="assortment-card-button" type="button">
+                  Add to cart
+                </button>
+              </article>
+            </li>
+            <li class="assortment-item">
+              <article class="assortment-card">
+                <img
+                  class="assortment-image"
+                  src="./images/assortment/milk.jpg"
+                  srcset="./images/assortment/milk.jpg 1x, ./images/assortment/milk2x.jpg 2x"
+                  alt="Organic Almond Milk"
+                />
+                <div class="assortment-info">
+                  <div class="assortment-content">
+                    <h4 class="assortment-card-title">Organic Almond Milk</h4>
+                    <p class="assortment-card-description">
+                      Natural plant-based milk with no added sugar — perfect for
+                      coffee and breakfast.
+                    </p>
+                  </div>
+                  <div class="assortment-price">
+                    <data class="assortment-price-value" value="4.20"
+                      >$4.20</data
+                    >
+                    <span class="assortment-price-unit">per 1 liter</span>
+                  </div>
+                </div>
+                <button class="assortment-card-button" type="button">
+                  Add to cart
+                </button>
+              </article>
+            </li>
+            <li class="assortment-item">
+              <article class="assortment-card">
+                <img
+                  class="assortment-image"
+                  src="./images/assortment/honey.jpg"
+                  srcset="
+                    ./images/assortment/honey.jpg   1x,
+                    ./images/assortment/honey2x.jpg 2x
+                  "
+                  alt="Raw Organic Honey"
+                />
+                <div class="assortment-info">
+                  <div class="assortment-content">
+                    <h4 class="assortment-card-title">Raw Organic Honey</h4>
+                    <p class="assortment-card-description">
+                      Unfiltered honey straight from the apiary — natural,
+                      sweet, and healthy.
+                    </p>
+                  </div>
+                  <div class="assortment-price">
+                    <data class="assortment-price-value" value="7.50"
+                      >$7.50</data
+                    >
+                    <span class="assortment-price-unit">per 500 ml jar</span>
+                  </div>
+                </div>
+                <button class="assortment-card-button" type="button">
+                  Add to cart
+                </button>
+              </article>
+            </li>
+            <li class="assortment-item">
+              <article class="assortment-card">
+                <img
+                  class="assortment-image"
+                  src="./images/assortment/carrots.jpg"
+                  srcset="
+                    ./images/assortment/carrots.jpg   1x,
+                    ./images/assortment/carrots2x.jpg 2x
+                  "
+                  alt="Organic Carrots"
+                />
+                <div class="assortment-info">
+                  <div class="assortment-content">
+                    <h4 class="assortment-card-title">Organic Carrots</h4>
+                    <p class="assortment-card-description">
+                      Crunchy and sweet carrots grown without chemicals.
+                    </p>
+                  </div>
+                  <div class="assortment-price">
+                    <data class="assortment-price-value" value="1.90"
+                      >$1.90</data
+                    >
+                    <span class="assortment-price-unit">per 1 pound</span>
+                  </div>
+                </div>
+                <button class="assortment-card-button" type="button">
+                  Add to cart
+                </button>
+              </article>
+            </li>
+            <li class="assortment-item">
+              <article class="assortment-card">
+                <img
+                  class="assortment-image"
+                  src="./images/assortment/bread.jpg"
+                  srcset="
+                    ./images/assortment/bread.jpg   1x,
+                    ./images/assortment/bread2x.jpg 2x
+                  "
+                  alt="Wholegrain Organic Bread"
+                />
+                <div class="assortment-info">
+                  <div class="assortment-content">
+                    <h4 class="assortment-card-title">
+                      Wholegrain Organic Bread
+                    </h4>
+                    <p class="assortment-card-description">
+                      Homemade sourdough bread made with organic wholegrain
+                      flour.
+                    </p>
+                  </div>
+                  <div class="assortment-price">
+                    <data class="assortment-price-value" value="4.80"
+                      >$4.80</data
+                    >
+                    <span class="assortment-price-unit">per loaf</span>
+                  </div>
+                </div>
+                <button class="assortment-card-button" type="button">
+                  Add to cart
+                </button>
+              </article>
+            </li>
+            <li class="assortment-item">
+              <article class="assortment-card">
+                <img
+                  class="assortment-image"
+                  src="./images/assortment/herbal-tea.jpg"
+                  srcset="
+                    ./images/assortment/herbal-tea.jpg   1x,
+                    ./images/assortment/herbal-tea2x.jpg 2x
+                  "
+                  alt="Organic Herbal Tea Mix"
+                />
+                <div class="assortment-info">
+                  <div class="assortment-content">
+                    <h4 class="assortment-card-title">
+                      Organic Herbal Tea Mix
+                    </h4>
+                    <p class="assortment-card-description">
+                      Fragrant blend of mint, chamomile, and thyme — perfect for
+                      relaxation.
+                    </p>
+                  </div>
+                  <div class="assortment-price">
+                    <data class="assortment-price-value" value="6.30"
+                      >$6.30</data
+                    >
+                    <span class="assortment-price-unit">per 100g</span>
+                  </div>
+                </div>
+                <button class="assortment-card-button" type="button">
+                  Add to cart
+                </button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!-- Feedbacks -->
       <section class="feedbacks" id="feedbacks">
@@ -775,80 +1099,66 @@
         <div class=" container faq-container">
           <div class="faq-info">
             <h2 class="faq-title">FAQs</h2>
-            <p class="faq-text">
-              Here are some common questions about our organic products and
-              services.
-            </p>
+            <p class="faq-text">Here are some common questions about our organic products and services.</p>
           </div>
           <div class="faq-list-container">
-            <ul class="faq-list">
-              <li class="faq-item">
-                <div class="faq-question">
-                  <h3 class="faq-subtitle">Are all products organic?</h3>
-                  <svg class="faq-svg">
-                    <use href="./images/icons.svg#icon-Arrow-open"></use>
-                  </svg>
-                </div>
-                <p class="faq-answer">
-                  Yes, all our products are certified organic. We prioritize
-                  quality and sustainability in our sourcing. You can trust that
-                  everything you buy from us meets strict organic standards.
-                </p>
-              </li>
-              <li class="faq-item">
-                <div class="faq-question">
-                  <h3 class="faq-subtitle">Where do you source?</h3>
-                  <svg class="faq-svg">
-                    <use href="./images/icons.svg#icon-Arrow-open"></use>
-                  </svg>
-                </div>
-                <p class="faq-answer">
-                  We source our products from local farmers and trusted
-                  suppliers. This ensures freshness and supports our community.
-                  Our commitment is to ethical and sustainable practices.
-                </p>
-              </li>
-              <li class="faq-item">
-                <div class="faq-question">
-                  <h3 class="faq-subtitle">What areas do you deliver?</h3>
-                  <svg class="faq-svg">
-                    <use href="./images/icons.svg#icon-Arrow-open"></use>
-                  </svg>
-                </div>
-                <p class="faq-answer">
-                  We currently deliver to several neighborhoods in the region.
-                  Check our delivery area on the website for specifics. If
-                  you're unsure, feel free to reach out!
-                </p>
-              </li>
-              <li class="faq-item">
-                <div class="faq-question">
-                  <h3 class="faq-subtitle">Do you offer subscriptions?</h3>
-                  <svg class="faq-svg">
-                    <use href="./images/icons.svg#icon-Arrow-open"></use>
-                  </svg>
-                </div>
-                <p class="faq-answer">
-                  Yes, we offer subscription plans for regular deliveries. This
-                  is a convenient way to ensure you never run out of your
-                  favorite organic products. You can customize your subscription
-                  based on your needs.
-                </p>
-              </li>
-              <li class="faq-item">
-                <div class="faq-question">
-                  <h3 class="faq-subtitle">How can I contact?</h3>
-                  <svg class="faq-svg">
-                    <use href="./images/icons.svg#icon-Arrow-open"></use>
-                  </svg>
-                </div>
-                <p class="faq-answer">
-                  You can reach us via phone or email for any inquiries. Our
-                  customer service team is here to help. We aim to respond to
-                  all questions promptly.
-                </p>
-              </li>
-            </ul>
+          <ul class="faq-list">
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">Are all products organic?</h3>
+                <svg class="faq-svg" >
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                Yes, all our products are certified organic. We prioritize quality and sustainability in our sourcing. You can trust that everything you buy from us meets strict organic standards.
+              </p>
+            </li>
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">Where do you source?</h3>
+                <svg class="faq-svg" >
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                We source our products from local farmers and trusted suppliers. This ensures freshness and supports our community. Our commitment is to ethical and sustainable practices.
+              </p>
+            </li>
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">What areas do you deliver?</h3>
+                <svg class="faq-svg">
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                We currently deliver to several neighborhoods in the region. Check our delivery area on the website for specifics. If you're unsure, feel free to reach out!
+              </p>
+            </li>
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">Do you offer subscriptions?</h3>
+                <svg class="faq-svg">
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                Yes, we offer subscription plans for regular deliveries. This is a convenient way to ensure you never run out of your favorite organic products. You can customize your subscription based on your needs.
+              </p>
+            </li>
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">How can I contact?</h3>
+                <svg class="faq-svg">
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                You can reach us via phone or email for any inquiries. Our customer service team is here to help. We aim to respond to all questions promptly.
+              </p>
+            </li>
+          </ul>
           </div>
         </div>
       </section>
