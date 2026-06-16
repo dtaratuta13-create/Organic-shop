@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,24 +14,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/assortmens.css" />
     <link rel="stylesheet" href="./css/faqs.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/benefits.css" />
      <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/feedbacks.css" 
@@ -297,7 +294,10 @@
                 <img
                   class="assortment-image"
                   src="./images/assortment/eggs.jpg"
-                  srcset="./images/assortment/eggs.jpg 1x, ./images/assortment/eggs2x.jpg 2x"
+                  srcset="
+                    ./images/assortment/eggs.jpg   1x,
+                    ./images/assortment/eggs2x.jpg 2x
+                  "
                   alt="Free-Range Organic Eggs"
                 />
                 <div class="assortment-info">
@@ -326,7 +326,10 @@
                 <img
                   class="assortment-image"
                   src="./images/assortment/milk.jpg"
-                  srcset="./images/assortment/milk.jpg 1x, ./images/assortment/milk2x.jpg 2x"
+                  srcset="
+                    ./images/assortment/milk.jpg   1x,
+                    ./images/assortment/milk2x.jpg 2x
+                  "
                   alt="Organic Almond Milk"
                 />
                 <div class="assortment-info">
@@ -772,66 +775,80 @@
         <div class=" container faq-container">
           <div class="faq-info">
             <h2 class="faq-title">FAQs</h2>
-            <p class="faq-text">Here are some common questions about our organic products and services.</p>
+            <p class="faq-text">
+              Here are some common questions about our organic products and
+              services.
+            </p>
           </div>
           <div class="faq-list-container">
-          <ul class="faq-list">
-            <li class="faq-item">
-              <div class="faq-question">
-                <h3 class="faq-subtitle">Are all products organic?</h3>
-                <svg class="faq-svg" >
-                  <use href="./images/icons.svg#icon-Arrow-open"></use>
-                </svg>
-              </div>
-              <p class="faq-answer">
-                Yes, all our products are certified organic. We prioritize quality and sustainability in our sourcing. You can trust that everything you buy from us meets strict organic standards.
-              </p>
-            </li>
-            <li class="faq-item">
-              <div class="faq-question">
-                <h3 class="faq-subtitle">Where do you source?</h3>
-                <svg class="faq-svg" >
-                  <use href="./images/icons.svg#icon-Arrow-open"></use>
-                </svg>
-              </div>
-              <p class="faq-answer">
-                We source our products from local farmers and trusted suppliers. This ensures freshness and supports our community. Our commitment is to ethical and sustainable practices.
-              </p>
-            </li>
-            <li class="faq-item">
-              <div class="faq-question">
-                <h3 class="faq-subtitle">What areas do you deliver?</h3>
-                <svg class="faq-svg">
-                  <use href="./images/icons.svg#icon-Arrow-open"></use>
-                </svg>
-              </div>
-              <p class="faq-answer">
-                We currently deliver to several neighborhoods in the region. Check our delivery area on the website for specifics. If you're unsure, feel free to reach out!
-              </p>
-            </li>
-            <li class="faq-item">
-              <div class="faq-question">
-                <h3 class="faq-subtitle">Do you offer subscriptions?</h3>
-                <svg class="faq-svg">
-                  <use href="./images/icons.svg#icon-Arrow-open"></use>
-                </svg>
-              </div>
-              <p class="faq-answer">
-                Yes, we offer subscription plans for regular deliveries. This is a convenient way to ensure you never run out of your favorite organic products. You can customize your subscription based on your needs.
-              </p>
-            </li>
-            <li class="faq-item">
-              <div class="faq-question">
-                <h3 class="faq-subtitle">How can I contact?</h3>
-                <svg class="faq-svg">
-                  <use href="./images/icons.svg#icon-Arrow-open"></use>
-                </svg>
-              </div>
-              <p class="faq-answer">
-                You can reach us via phone or email for any inquiries. Our customer service team is here to help. We aim to respond to all questions promptly.
-              </p>
-            </li>
-          </ul>
+            <ul class="faq-list">
+              <li class="faq-item">
+                <div class="faq-question">
+                  <h3 class="faq-subtitle">Are all products organic?</h3>
+                  <svg class="faq-svg">
+                    <use href="./images/icons.svg#icon-Arrow-open"></use>
+                  </svg>
+                </div>
+                <p class="faq-answer">
+                  Yes, all our products are certified organic. We prioritize
+                  quality and sustainability in our sourcing. You can trust that
+                  everything you buy from us meets strict organic standards.
+                </p>
+              </li>
+              <li class="faq-item">
+                <div class="faq-question">
+                  <h3 class="faq-subtitle">Where do you source?</h3>
+                  <svg class="faq-svg">
+                    <use href="./images/icons.svg#icon-Arrow-open"></use>
+                  </svg>
+                </div>
+                <p class="faq-answer">
+                  We source our products from local farmers and trusted
+                  suppliers. This ensures freshness and supports our community.
+                  Our commitment is to ethical and sustainable practices.
+                </p>
+              </li>
+              <li class="faq-item">
+                <div class="faq-question">
+                  <h3 class="faq-subtitle">What areas do you deliver?</h3>
+                  <svg class="faq-svg">
+                    <use href="./images/icons.svg#icon-Arrow-open"></use>
+                  </svg>
+                </div>
+                <p class="faq-answer">
+                  We currently deliver to several neighborhoods in the region.
+                  Check our delivery area on the website for specifics. If
+                  you're unsure, feel free to reach out!
+                </p>
+              </li>
+              <li class="faq-item">
+                <div class="faq-question">
+                  <h3 class="faq-subtitle">Do you offer subscriptions?</h3>
+                  <svg class="faq-svg">
+                    <use href="./images/icons.svg#icon-Arrow-open"></use>
+                  </svg>
+                </div>
+                <p class="faq-answer">
+                  Yes, we offer subscription plans for regular deliveries. This
+                  is a convenient way to ensure you never run out of your
+                  favorite organic products. You can customize your subscription
+                  based on your needs.
+                </p>
+              </li>
+              <li class="faq-item">
+                <div class="faq-question">
+                  <h3 class="faq-subtitle">How can I contact?</h3>
+                  <svg class="faq-svg">
+                    <use href="./images/icons.svg#icon-Arrow-open"></use>
+                  </svg>
+                </div>
+                <p class="faq-answer">
+                  You can reach us via phone or email for any inquiries. Our
+                  customer service team is here to help. We aim to respond to
+                  all questions promptly.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -918,5 +935,98 @@
         });
       });
     </script>
+    <!-- #region footer -->
+    <footer class="footer-section" id="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="./index.html">
+              <svg width="162" height="70" class="footer-logo-icon">
+                <use href="./images/icons.svg#CompanyLogo" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="#hero" class="footer-nav-link">Home</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#mission" class="footer-nav-link">Mission</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#benefits" class="footer-nav-link">Benefits</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#assortment" class="footer-nav-link">Assortment</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#feedbacks" class="footer-nav-link">Feedbacks</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#faq" class="footer-nav-link">FAQ</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#contacts" class="footer-nav-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="footer-contacts-link"
+                >
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#Facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer-contacts-link"
+                >
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#Instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a href="https://x.com/" class="footer-contacts-link">
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#X" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="footer-contacts-link"
+                >
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#LinkedIn" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a href="https://www.youtube.com/" class="footer-contacts-link">
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#Youtube" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-credits">
+          <p class="footer-credits-text">
+            © 2025 Organic Shop. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- #endregion footer -->
   </body>
 </html>
