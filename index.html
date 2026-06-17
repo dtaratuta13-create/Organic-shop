@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,16 +15,13 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="./images/Hero1xdesktop.jpg" media="(min-width: 1158px)">
   <link rel="preload" as="image" href="./images/Hero1xmobile.jpg" media="(max-width: 1157px)">
     
     <link rel="stylesheet" href="./css/assortmens.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/assortmens.css" />
     <link rel="stylesheet" href="./css/faqs.css" />
     <link rel="stylesheet" href="./css/benefits.css" />
     <link rel="stylesheet" href="./css/contact.css" />
@@ -32,7 +30,7 @@
     <link rel="stylesheet" href="./css/mission.css" />
     <link rel="stylesheet" href="./css/hero.css" />
   </head>
-
+  <body>
 
     <!-- BURGER MENU -->
 
@@ -43,64 +41,6 @@
   Для закриття:
   class="mobile-menu"
   -->
-
-    <div class="mobile-menu">
-      <div class="mobile-menu-container">
-        <div class="mobile-menu-top">
-          <a
-            href="./index.html"
-            class="logo"
-            aria-label="Organic Shop home page"
-          >
-            <svg class="logo-icon" width="142" height="60">
-              <use href="./images/icons.svg#CompanyLogo"></use>
-            </svg>
-          </a>
-
-          <button class="close-btn" type="button" aria-label="Close menu">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#close"></use>
-            </svg>
-          </button>
-        </div>
-
-        <nav class="mobile-nav" aria-label="Mobile navigation">
-          <ul class="mobile-nav-list">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-
-            <li>
-              <a href="#mission">Mission</a>
-            </li>
-
-            <li>
-              <a href="#benefits">Benefits</a>
-            </li>
-
-            <li>
-              <a href="#assortment">Assortment</a>
-            </li>
-
-            <li>
-              <a href="#feedbacks">Feedbacks</a>
-            </li>
-
-            <li>
-              <a href="#faq">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-
-        <a href="#assortment" class="order-btn mobile-menu-order-btn">
-          Order
-        </a>
-      </div>
-    </div>
     <header class="header">
       <div class="header-container">
         <!-- LOGO -->
@@ -972,7 +912,7 @@
                     </form>
                 </div>
 
-                <img class="contact-img" src="./images/contactsPhoto2x.jpg" alt="Our team" width="343" />
+                <img class="contact-img" src="./images/contactsPhoto2x.jpg" alt="Our team" width="343" loading="lazy" fetchpriority="low" />
             </div>
         </section>
     </main>

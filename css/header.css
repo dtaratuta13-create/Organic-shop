@@ -288,11 +288,12 @@ button:hover {
 ========================= */
 
 @media screen and (min-width: 1440px) {
-  .header-container {
-    max-width: 100%;
-    padding-left: 64px;
-    padding-right: 64px;
-  }
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 64px;
+  padding-right: 64px;
+}
 
   .desktop-nav {
     display: flex;
