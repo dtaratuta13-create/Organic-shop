@@ -52,6 +52,7 @@
 .assortment-card {
   display: flex;
   flex-direction: column;
+  max-width: 343px;
   width: 100%;
   border-radius: 0 0 6px 6px; 
 }
@@ -68,12 +69,14 @@
   align-items: flex-start;
   gap: 16px;
   margin-bottom: 16px;
+  color: #010400;
 }
 
 .assortment-content {
   max-width: 269px;
   width: 100%;
   flex-grow: 1;
+  color: #010400;
 }
 
 .assortment-card-title {
@@ -81,6 +84,8 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
+  margin: 0;
+  color: #010400;
 }
 
 .assortment-card-description {
@@ -88,12 +93,18 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  color: #010400;
+  margin: 0;
 }
 
 .assortment-price {
-  max-width: 58px;
+  max-width: 58px; 
   width: 100%;
   text-align: right;
+  color: #010400;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
 }
 
 .assortment-price-value { 
@@ -101,6 +112,8 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
+  color: #010400;
+  margin: 0;
 }
 
 .assortment-price-unit {
@@ -108,6 +121,8 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 1.3;
+  color: #010400;
+  margin: 0;
 }
 
 .assortment-card-button {
@@ -124,6 +139,7 @@
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
   margin-top: auto;
+  color: #010400;
 }
 
 .assortment-card-button:hover,
@@ -180,6 +196,7 @@
 
   .assortment-list {
     gap: 24px; 
+    align-items: stretch;
   }
 
   .assortment-item {
@@ -191,10 +208,12 @@
   }
 
   .assortment-info {
-    margin-bottom: 37px;
+    flex-grow: 1; 
+    gap: 16px;
   }
-
+  
   .assortment-content {
     max-width: 236px;
   }
+  
 }
