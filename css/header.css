@@ -15,13 +15,10 @@ a {
 
 .header {
   background-color: #5e8a4d;
-  border-bottom: 1px solid #ffffff;
-  width: 100%;
 }
 
 .header-container {
-  width: 100%;
-  max-width: 375px;
+  max-width: 1440px;
   height: 72px;
 
   margin: 0 auto;
@@ -226,7 +223,7 @@ button:hover {
 }
 
 .mobile-menu-order-btn {
-  width: 100%;
+  margin: 0 auto;
 }
 
 /* =========================
@@ -235,8 +232,6 @@ button:hover {
 
 @media screen and (min-width: 768px) {
   .header-container {
-    max-width: 768px;
-
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -257,16 +252,8 @@ button:hover {
     padding-bottom: 32px;
   }
 
-  .mobile-menu-order-btn {
-    width: 222px;
-  }
-
   .mobile-menu-top .logo {
     display: none;
-  }
-
-  .mobile-nav-list {
-    align-items: flex-end;
   }
 }
 
@@ -290,7 +277,6 @@ button:hover {
 
 @media screen and (min-width: 1440px) {
   .header-container {
-    max-width: 100%;
     padding-left: 64px;
     padding-right: 64px;
   }
