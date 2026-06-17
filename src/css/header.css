@@ -225,7 +225,10 @@ button:hover {
 }
 
 .mobile-menu-order-btn {
-  width: 343px;
+  width: 100%;
+  max-width: 343px;
+  margin: 0 auto;
+  display: block;
 }
 
 /* =========================

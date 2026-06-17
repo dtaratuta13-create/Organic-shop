@@ -2,12 +2,14 @@
     min-width: 320px;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid #000;
+    /* remove debug border */
+    /* border: 1px solid #000; */
+    background-color: #D1DDCC; /* softer green background */
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url('../images/Hero1xmobile.jpg');;
+        url('../images/hero1xmobile.jpg');;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,7 +103,7 @@
     .hero {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)),
-        url(../images/Hero2xmobile.jpg);
+        url(../images/hero2xmobile.jpg);
     }
 }
 
@@ -153,7 +155,7 @@
     .hero {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)),
-            url(../images/Hero2xtablet.jpg);
+            url(../images/hero2xtablet.jpg);
             
     }
 }
@@ -167,7 +169,7 @@
         margin: 0 auto;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)),
-            url(../images/Hero1xdesktop.jpg);
+            url(../images/hero1xdesktop.jpg);
         padding: 324px 730px 324px 64px;
     }
     .hero .container {
@@ -189,6 +191,6 @@
     .hero {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)),
-            url(../images/Hero2xdesktop.jpg);
+            url(../images/hero2xdesktop.jpg);
     }
 }
