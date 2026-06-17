@@ -254,7 +254,7 @@
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
-                    <h4 class="assortment-card-title">Organic Gala Apples</h4>
+                    <h3 class="assortment-card-title">Organic Gala Apples</h3>
                     <p class="assortment-card-description">
                       Juicy, crisp, and sweet apples grown without pesticides.
                     </p>
@@ -284,7 +284,7 @@
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
-                    <h4 class="assortment-card-title">Fresh Organic Spinach</h4>
+                    <h3 class="assortment-card-title">Fresh Organic Spinach</h3>
                     <p class="assortment-card-description">
                       Young spinach leaves hand-picked from a local organic
                       farm.
@@ -315,9 +315,9 @@
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
-                    <h4 class="assortment-card-title">
+                    <h3 class="assortment-card-title">
                       Free-Range Organic Eggs
-                    </h4>
+                    </h3>
                     <p class="assortment-card-description">
                       Eggs from free-range hens fed with natural feed.
                     </p>
@@ -347,7 +347,7 @@
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
-                    <h4 class="assortment-card-title">Organic Almond Milk</h4>
+                    <h3 class="assortment-card-title">Organic Almond Milk</h3>
                     <p class="assortment-card-description">
                       Natural plant-based milk with no added sugar — perfect for
                       coffee and breakfast.
@@ -378,7 +378,7 @@
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
-                    <h4 class="assortment-card-title">Raw Organic Honey</h4>
+                    <h3 class="assortment-card-title">Raw Organic Honey</h3>
                     <p class="assortment-card-description">
                       Unfiltered honey straight from the apiary — natural,
                       sweet, and healthy.
@@ -409,7 +409,7 @@
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
-                    <h4 class="assortment-card-title">Organic Carrots</h4>
+                    <h3 class="assortment-card-title">Organic Carrots</h3>
                     <p class="assortment-card-description">
                       Crunchy and sweet carrots grown without chemicals.
                     </p>
@@ -439,9 +439,9 @@
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
-                    <h4 class="assortment-card-title">
+                      <h3 class="assortment-card-title">
                       Wholegrain Organic Bread
-                    </h4>
+                    </h3>
                     <p class="assortment-card-description">
                       Homemade sourdough bread made with organic wholegrain
                       flour.
@@ -472,9 +472,9 @@
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
-                    <h4 class="assortment-card-title">
+                      <h3 class="assortment-card-title">
                       Organic Herbal Tea Mix
-                    </h4>
+                    </h3>
                     <p class="assortment-card-description">
                       Fragrant blend of mint, chamomile, and thyme — perfect for
                       relaxation.
@@ -909,32 +909,6 @@
             </div>
         </section>
     </main>
-
-    <footer></footer>
-
-    <script>
-      const menuBtn = document.querySelector('.menu-btn');
-      const closeBtn = document.querySelector('.close-btn');
-      const mobileMenu = document.querySelector('.mobile-menu');
-      const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
-
-      // Открыть меню
-      menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.add('is-open');
-      });
-
-      // Закрыть меню
-      closeBtn.addEventListener('click', () => {
-        mobileMenu.classList.remove('is-open');
-      });
-
-      // Закрыть меню при клике на ссылку
-      mobileNavLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.remove('is-open');
-        });
-      });
-    </script>
     <!-- #region footer -->
     <footer class="footer-section" id="footer">
       <div class="footer-container">
@@ -1031,6 +1005,30 @@
       </div>
     </footer>
     <!-- #endregion footer -->
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const closeBtn = document.querySelector('.close-btn');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+      if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.add('is-open');
+        });
+      }
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          mobileMenu.classList.remove('is-open');
+        });
+      }
+
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('is-open');
+        });
+      });
+    </script>
   </body>
 </html>
 
