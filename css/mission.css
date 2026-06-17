@@ -1,7 +1,6 @@
 /* Styles for Mobile devices */
 
 .container {
-    width: 100%;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -55,6 +54,10 @@
         padding: 0 32px;
     }
 
+    .mission {
+        padding: 64px 0;
+    }
+
     .content-our-mission {
         flex-direction: row;
         gap: 24px;
@@ -80,8 +83,7 @@
     
     
     .mission {
-        padding: 112px 64px;
-        gap: 80px;
+        padding: 112px 0;
     }
 
     .title-our-mission {
