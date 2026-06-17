@@ -1,5 +1,3 @@
-<!doctype html>
-<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,22 +16,284 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/assortmens.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/assortmens.css" />
+    <link rel="stylesheet" href="./css/faqs.css" />
+    <link rel="stylesheet" href="./css/benefits.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/feedbacks.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/mission.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
   </head>
 
-  <body>
-    <header></header>
+
+    <!-- BURGER MENU -->
+
+    <!--
+  Для відкриття меню:
+  class="mobile-menu is-open"
+
+  Для закриття:
+  class="mobile-menu"
+  -->
+
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu-top">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="Organic Shop home page"
+          >
+            <svg class="logo-icon" width="142" height="60">
+              <use href="./images/icons.svg#CompanyLogo"></use>
+            </svg>
+          </a>
+
+          <button class="close-btn" type="button" aria-label="Close menu">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+
+            <li>
+              <a href="#mission">Mission</a>
+            </li>
+
+            <li>
+              <a href="#benefits">Benefits</a>
+            </li>
+
+            <li>
+              <a href="#assortment">Assortment</a>
+            </li>
+
+            <li>
+              <a href="#feedbacks">Feedbacks</a>
+            </li>
+
+            <li>
+              <a href="#faq">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#assortment" class="order-btn mobile-menu-order-btn">
+          Order
+        </a>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-container">
+        <!-- LOGO -->
+
+        <a href="./index.html" class="logo" aria-label="Organic Shop home page">
+          <svg class="logo-icon" width="142" height="60">
+            <use href="./images/icons.svg#CompanyLogo"></use>
+          </svg>
+        </a>
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <div class="header-right">
+          <nav class="desktop-nav" aria-label="Main navigation">
+            <ul class="desktop-nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#mission">Mission</a></li>
+              <li><a href="#benefits">Benefits</a></li>
+              <li><a href="#assortment">Assortment</a></li>
+              <li><a href="#feedbacks">Feedbacks</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <a href="#assortment" class="order-btn">Order</a>
+        </div>
+
+        <!-- TABLET + MOBILE -->
+
+        <div class="mobile-controls">
+          <a href="#assortment" class="order-btn mobile-order-btn"> Order </a>
+
+          <button class="menu-btn" type="button" aria-label="Open menu">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- BURGER MENU -->
+
+    <!--
+  Для відкриття меню:
+  class="mobile-menu is-open"
+
+  Для закриття:
+  class="mobile-menu"
+  -->
+
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu-top">
+          <a
+            href="./index.html"
+            class="logo"
+            aria-label="Organic Shop home page"
+          >
+            <svg class="logo-icon" width="142" height="60">
+              <use href="./images/icons.svg#CompanyLogo"></use>
+            </svg>
+          </a>
+
+          <button class="close-btn" type="button" aria-label="Close menu">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+
+            <li>
+              <a href="#mission">Mission</a>
+            </li>
+
+            <li>
+              <a href="#benefits">Benefits</a>
+            </li>
+
+            <li>
+              <a href="#assortment">Assortment</a>
+            </li>
+
+            <li>
+              <a href="#feedbacks">Feedbacks</a>
+            </li>
+
+            <li>
+              <a href="#faq">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#assortment" class="order-btn mobile-menu-order-btn">
+          Order
+        </a>
+      </div>
+    </div>
 
     <main>
-      <!-- Hero -->
-      <section class="hero"></section>
+         <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Organic Shop - Naturally better.</h1>
+          <p class="hero-text">
+            Your source for fresh, healthy, and responsibly grown food. Discover
+            the taste of nature with our carefully selected organic products.
+          </p>
+          <button class="hero-button" type="button" onclick="location.href='#contacts'">Get in touch</button>
+        </div>
+      </section>
+    <!-- Mission Iryna Valchyshyn-->
+    <section class="mission" id="mission">
+      <div class="container">
+        <div class="content-our-mission">
 
-      <!-- Mission -->
-      <section class="mission"></section>
+          <h2 class="title-our-mission">Our Mission: Fresh, Local, and Organic for a Healthier Tomorrow.</h2>
+
+          <p class="text-our-mission">
+            At Organic Shop, we believe in the power of nature. Our mission is to provide you with fresh, locally
+            sourced
+            organic
+            products that nourish both body and soul. We partner with ethical farmers who share our commitment to
+            sustainability and
+            quality.
+          </p>
+
+        </div>
+
+        <img class="img-mission" src="./images/img.our-mission.jpg" srcset="./images/img.our-mission@2x.jpg 2x"
+          alt="A small, diverse team of friendly people gathered around a wooden table, smiling and working together — packing organic vegetables into eco-friendly cotton bags, arranging fresh produce like carrots, apples"
+          width="343" height="193" loading="lazy">
+      </div>
+    </section>
 
       <!-- Benefits -->
-      <section class="benefits"></section>
+      <section class="benefits" id="benefits">
+        <div class="container">
+          <img class="benefits-images"
+          src="./images/benefits/organic-food.jpg"
+          srcset="./images/benefits/organic-food.jpg  1x,
+          ./images/benefits/organic-food2x.jpg 2x "
+          alt="Fresh organic vegetables, herbs, honey, bread and eco-friendly packaging">
+          <div class="benefits-info">
+            <div class="benefits-title">
+              <h2 class="title">Why Choose Organic?</h2>
+              <p class="text">Organic products offer a healthier choice for you and your family.
+                 With no synthetic pesticides or GMOs, you can enjoy better nutrition and 
+                 natural flavors while supporting sustainable farming practices.</p>
+            </div>
+            <div class="benefits-content">
+             <ul class="benefits-list">
+              <li class="benefits-item">
+                 <svg width="48" height="48">
+              <use href="./images/icons.svg#health"></use>
+            </svg>
+            <h3 class="subtitle">Better for Your Health</h3>
+            <p class="text">Organic foods are grown without synthetic chemicals, making them safer for your body. They're rich in antioxidants and nutrients that support your immune system and long-term well-being.</p>
+              </li>
+               <li class="benefits-item">
+                 <svg width="48" height="48">
+              <use href="./images/icons.svg#basketball"></use>
+            </svg>
+              <h3 class="subtitle">Protecting the Planet</h3>
+            <p class="text">Organic farming reduces pollution, conserves water, and improves soil health. By choosing organic, you're helping build a cleaner, more sustainable environment for future generations.</p>
+              </li>
+               <li class="benefits-item">
+                 <svg width="48" height="48">
+              <use href="./images/icons.svg#restaurant"></use>
+            </svg>
+              <h3 class="subtitle">Fruits & Vegetables</h3>
+            <p class="text">Freshly picked organic produce delivered straight from local farms to your table.</p>
+              </li>
+               <li class="benefits-item">
+                 <svg width="48" height="48">
+              <use href="./images/icons.svg#cheese"></use>
+            </svg>
+              <h3 class="subtitle">Dairy Products</h3>
+            <p class="text">Creamy, organic dairy options that are both delicious and ethically sourced.</p>
+              </li>
+             </ul>
+          </div>
+        </div>
+      </section>
+      
 
       <!-- Assortment -->
       <section class="section assortment" id="assortment">
@@ -107,7 +367,10 @@
                 <img
                   class="assortment-image"
                   src="./images/assortment/eggs.jpg"
-                  srcset="./images/assortment/eggs.jpg 1x, ./images/assortment/eggs2x.jpg 2x"
+                  srcset="
+                    ./images/assortment/eggs.jpg   1x,
+                    ./images/assortment/eggs2x.jpg 2x
+                  "
                   alt="Free-Range Organic Eggs"
                 />
                 <div class="assortment-info">
@@ -136,7 +399,10 @@
                 <img
                   class="assortment-image"
                   src="./images/assortment/milk.jpg"
-                  srcset="./images/assortment/milk.jpg 1x, ./images/assortment/milk2x.jpg 2x"
+                  srcset="
+                    ./images/assortment/milk.jpg   1x,
+                    ./images/assortment/milk2x.jpg 2x
+                  "
                   alt="Organic Almond Milk"
                 />
                 <div class="assortment-info">
@@ -290,16 +556,537 @@
         </div>
       </section>
 
+
       <!-- Feedbacks -->
-      <section class="feedbacks"></section>
+      <section class="feedbacks" id="feedbacks">
+        <div class="container">
+          <h2 class="feedbacks-main-title">What Our Customers Say</h2>
+          <p class="feedbacks-desc">
+            We’re proud to grow a community that values health, sustainability,
+            and real flavor. Read what our happy customers have to say about
+            their experience with our organic products.
+          </p>
+
+          <ul class="feedbacks-list">
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                Their eco-friendly packaging is a big plus for me. Highly
+                recommend!
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/tony.jpg"
+                  alt="Tony Lee"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Tony Lee</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "I absolutely love the variety of organic produce available
+                here. Everything is fresh and bursting with flavor!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/emily.jpg"
+                  alt="Emily Johnson"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Emily Johnson</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "The staff is incredibly knowledgeable and always willing to
+                help me find what I need. Great service!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/michael.jpg"
+                  alt="Michael Smith"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Michael Smith</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "I've noticed a significant improvement in my health since
+                switching to their organic products. Highly recommend!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/sarah.jpg"
+                  alt="Sarah Davis"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Sarah Davis</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "The range of organic snacks is fantastic! Perfect for my kids,
+                who love them and I feel good about giving them healthy
+                options."
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/david.jpg"
+                  alt="David Brown"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">David Brown</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "I appreciate that they source local ingredients. It makes me
+                feel connected to the community!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/jessica.jpg"
+                  alt="Jessica Wilson"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Jessica Wilson</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "The prices are fair for the quality of food. I never feel
+                guilty about spending a little more here."
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/andrew.jpg"
+                  alt="Andrew Lee"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Andrew Lee</h3>
+              </div>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="rating-stars-list">
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="rating-stars-none" width="20" height="19">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="feedbacks-text">
+                "Their eco-friendly packaging is a big plus for me. It's nice to
+                support a business that cares about the environment!"
+              </p>
+              <div class="user-info">
+                <img
+                  class="user-avatar"
+                  src="./images/laura.jpg"
+                  alt="Laura Kim"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="user-name">Laura Kim</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!-- FAQs -->
-      <section class="faqs"></section>
+      <section class="faqs" id="faq">
+        <div class=" container faq-container">
+          <div class="faq-info">
+            <h2 class="faq-title">FAQs</h2>
+            <p class="faq-text">Here are some common questions about our organic products and services.</p>
+          </div>
+          <div class="faq-list-container">
+          <ul class="faq-list">
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">Are all products organic?</h3>
+                <svg class="faq-svg" >
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                Yes, all our products are certified organic. We prioritize quality and sustainability in our sourcing. You can trust that everything you buy from us meets strict organic standards.
+              </p>
+            </li>
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">Where do you source?</h3>
+                <svg class="faq-svg" >
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                We source our products from local farmers and trusted suppliers. This ensures freshness and supports our community. Our commitment is to ethical and sustainable practices.
+              </p>
+            </li>
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">What areas do you deliver?</h3>
+                <svg class="faq-svg">
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                We currently deliver to several neighborhoods in the region. Check our delivery area on the website for specifics. If you're unsure, feel free to reach out!
+              </p>
+            </li>
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">Do you offer subscriptions?</h3>
+                <svg class="faq-svg">
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                Yes, we offer subscription plans for regular deliveries. This is a convenient way to ensure you never run out of your favorite organic products. You can customize your subscription based on your needs.
+              </p>
+            </li>
+            <li class="faq-item">
+              <div class="faq-question">
+                <h3 class="faq-subtitle">How can I contact?</h3>
+                <svg class="faq-svg">
+                  <use href="./images/icons.svg#icon-Arrow-open"></use>
+                </svg>
+              </div>
+              <p class="faq-answer">
+                You can reach us via phone or email for any inquiries. Our customer service team is here to help. We aim to respond to all questions promptly.
+              </p>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </section>
 
       <!-- Contacts -->
-      <section class="contacts"></section>
+        <section class="contact-page" id="contacts">
+            <div class="container contact-container">
+
+                <div class="contact-form-wrapper">
+                    <p class="contact-subtitle">Contacts</p>
+                    <h2 class="contact-title">Get in Touch</h2>
+                    <p class="contact-desc">We'd love to hear from you anytime!</p>
+
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <a href="mailto:hello@organicstore.com" class="contact-link">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                hello@organicstore.com
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="tel:+15553291024" class="contact-link">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>
+                                +1 (555) 329-1024
+                            </a>
+                        </li>
+                    </ul>
+
+                    <form class="contact-form">
+
+                        <label class="contact-label">
+                            Name
+                            <input class="contact-input" type="text" name="name" placeholder="Sarah"
+                                pattern="^[a-zA-Z\s\.]{5,64}$" required />
+                        </label>
+
+                        <label class="contact-label">
+                            Email
+                            <input class="contact-input" type="email" name="email" placeholder="hello@organic.com"
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+                        </label>
+
+                        <label class="contact-label">
+                            Message
+                            <textarea class="contact-textarea" name="message" placeholder="Type your message..."
+                                maxlength="500" required></textarea>
+                        </label>
+
+                        <button class="contact-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <img class="contact-img" src="./images/contactsPhoto.jpg" alt="Our team" width="343" />
+            </div>
+        </section>
     </main>
 
     <footer></footer>
+
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const closeBtn = document.querySelector('.close-btn');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+      // Открыть меню
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('is-open');
+      });
+
+      // Закрыть меню
+      closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-open');
+      });
+
+      // Закрыть меню при клике на ссылку
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('is-open');
+        });
+      });
+    </script>
+    <!-- #region footer -->
+    <footer class="footer-section" id="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="./index.html">
+              <svg width="162" height="70" class="footer-logo-icon">
+                <use href="./images/icons.svg#CompanyLogo" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="#hero" class="footer-nav-link">Home</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#mission" class="footer-nav-link">Mission</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#benefits" class="footer-nav-link">Benefits</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#assortment" class="footer-nav-link">Assortment</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#feedbacks" class="footer-nav-link">Feedbacks</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#faq" class="footer-nav-link">FAQ</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#contacts" class="footer-nav-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="footer-contacts-link"
+                >
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#Facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer-contacts-link"
+                >
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#Instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a href="https://x.com/" class="footer-contacts-link">
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#X" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="footer-contacts-link"
+                >
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#LinkedIn" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a href="https://www.youtube.com/" class="footer-contacts-link">
+                  <svg width="32" height="32" class="footer-contacts-icon">
+                    <use href="./images/icons.svg#Youtube" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-credits">
+          <p class="footer-credits-text">
+            © 2025 Organic Shop. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- #endregion footer -->
   </body>
 </html>
