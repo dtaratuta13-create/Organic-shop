@@ -1,20 +1,21 @@
 /* Styles for Mobile devices */
 
-.mission {
-    background-color: #5e8a4d;
+.container {
     width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
-.mission .container{
-    max-width: 1440px;
-    margin: 0 auto;
-
+.mission {
+    background-color: #5e8a4d;
+    padding: 48px 0;
+}
+.mission .container {
     display: flex;
     flex-direction: column;
     gap: 32px;
-
-
 }
+
 
 .content-our-mission {
     display: flex;
@@ -23,7 +24,6 @@
 }
 
 .title-our-mission {
-    margin: 0;
 
     font-family: var(--second-family);
     font-size: 36px;
@@ -49,8 +49,10 @@
 
 /* Styles for Tablet devices */
 @media screen and (min-width: 768px) {
-    .mission {
-        padding: 64px 32px;
+
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
     }
 
     .content-our-mission {
@@ -70,6 +72,13 @@
 }
 /* Styles for Desktop devices */
 @media screen and (min-width: 1440px) {
+
+    .container {
+        max-width: 1440px;
+        padding: 0 64px;
+    }
+    
+    
     .mission {
         padding: 112px 64px;
         gap: 80px;
