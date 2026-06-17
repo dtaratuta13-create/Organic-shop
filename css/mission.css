@@ -1,20 +1,19 @@
 /* Styles for Mobile devices */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 .mission {
+    background-color: #5e8a4d;
     width: 100%;
-    padding: 64px 16px;
+}
+
+.mission .container{
+    max-width: 1440px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     gap: 32px;
 
-    background-color: #5e8a4d;
+
 }
 
 .content-our-mission {
@@ -46,13 +45,11 @@
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 16px;
 }
 
 /* Styles for Tablet devices */
 @media screen and (min-width: 768px) {
     .mission {
-        max-width: 768px;
         padding: 64px 32px;
     }
 
@@ -65,11 +62,15 @@
     .text-our-mission {
         width: calc((100% - 24px) / 2);
     }
+
+   .img-mission {
+       height: 396px;
+       object-fit: cover;
+   }
 }
 /* Styles for Desktop devices */
 @media screen and (min-width: 1440px) {
     .mission {
-        max-width: 1440px;
         padding: 112px 64px;
         gap: 80px;
     }
@@ -81,5 +82,10 @@
     .title-our-mission,
     .text-our-mission {
         width: calc((100% - 24px) / 2);
+    }
+
+    .img-mission {
+        height: 738px;
+        object-fit: cover;
     }
 }
