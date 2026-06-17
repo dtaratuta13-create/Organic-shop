@@ -195,7 +195,7 @@
 }
 
 /* Retina для десктопа */
-@media (min-width: 1158px) and (min-resolution: 192dpi) {
+@media (min-width: 1440px) and (min-resolution: 192dpi) {
     .hero {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)),
