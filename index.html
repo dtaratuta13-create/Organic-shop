@@ -1,4 +1,5 @@
-  <head>
+<!DOCTYPE html>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -16,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./images/Hero1xdesktop.jpg" media="(min-width: 1158px)">
+  <link rel="preload" as="image" href="./images/Hero1xmobile.jpg" media="(max-width: 1157px)">
     
     <link rel="stylesheet" href="./css/assortmens.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -210,14 +213,14 @@
 
     <main>
          <!-- Hero -->
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="container">
           <h1 class="hero-title">Organic Shop - Naturally better.</h1>
           <p class="hero-text">
             Your source for fresh, healthy, and responsibly grown food. Discover
             the taste of nature with our carefully selected organic products.
           </p>
-          <button class="hero-button" type="button" onclick="location.href='#contacts'">Get in touch</button>
+          <a class="hero-button" href="#contacts">Get in touch</a>
         </div>
       </section>
 
@@ -254,7 +257,8 @@
           src="./images/benefits/organic-food.jpg"
           srcset="./images/benefits/organic-food.jpg  1x,
           ./images/benefits/organic-food2x.jpg 2x "
-          alt="Fresh organic vegetables, herbs, honey, bread and eco-friendly packaging">
+          alt="Fresh organic vegetables, herbs, honey, bread and eco-friendly packaging"
+          width="640" height="360" loading="lazy" fetchpriority="low">
           <div class="benefits-info">
             <div class="benefits-title">
               <h2 class="title">Why Choose Organic?</h2>
@@ -295,10 +299,10 @@
              </ul>
           </div>
         </div>
+        </div>
       </section>
-      
-
       <!-- Assortment -->
+
       <section class="section assortment" id="assortment">
         <div class="container">
           <h3 class="assortment-subtitle">Assortment</h3>
@@ -313,7 +317,7 @@
                     ./images/assortment/gala-apples.jpg   1x,
                     ./images/assortment/gala-apples2x.jpg 2x
                   "
-                  alt="Organic Gala Apples"
+                  alt="Organic Gala Apples" width="343" height="193" loading="lazy" fetchpriority="low"
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
@@ -343,7 +347,7 @@
                     ./images/assortment/spinach.jpg   1x,
                     ./images/assortment/spinach2x.jpg 2x
                   "
-                  alt="Fresh Organic Spinach"
+                  alt="Fresh Organic Spinach" width="343" height="193" loading="lazy" fetchpriority="low"
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
@@ -374,7 +378,7 @@
                     ./images/assortment/eggs.jpg   1x,
                     ./images/assortment/eggs2x.jpg 2x
                   "
-                  alt="Free-Range Organic Eggs"
+                  alt="Free-Range Organic Eggs" width="343" height="193" loading="lazy" fetchpriority="low"
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
@@ -406,7 +410,7 @@
                     ./images/assortment/milk.jpg   1x,
                     ./images/assortment/milk2x.jpg 2x
                   "
-                  alt="Organic Almond Milk"
+                  alt="Organic Almond Milk" width="343" height="193" loading="lazy" fetchpriority="low"
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
@@ -437,7 +441,7 @@
                     ./images/assortment/honey.jpg   1x,
                     ./images/assortment/honey2x.jpg 2x
                   "
-                  alt="Raw Organic Honey"
+                  alt="Raw Organic Honey" width="343" height="193" loading="lazy" fetchpriority="low"
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
@@ -468,7 +472,7 @@
                     ./images/assortment/carrots.jpg   1x,
                     ./images/assortment/carrots2x.jpg 2x
                   "
-                  alt="Organic Carrots"
+                  alt="Organic Carrots" width="343" height="193" loading="lazy" fetchpriority="low"
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
@@ -498,7 +502,7 @@
                     ./images/assortment/bread.jpg   1x,
                     ./images/assortment/bread2x.jpg 2x
                   "
-                  alt="Wholegrain Organic Bread"
+                  alt="Wholegrain Organic Bread" width="343" height="193" loading="lazy" fetchpriority="low"
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
@@ -531,7 +535,7 @@
                     ./images/assortment/herbal-tea.jpg   1x,
                     ./images/assortment/herbal-tea2x.jpg 2x
                   "
-                  alt="Organic Herbal Tea Mix"
+                  alt="Organic Herbal Tea Mix" width="343" height="193" loading="lazy" fetchpriority="low"
                 />
                 <div class="assortment-info">
                   <div class="assortment-content">
@@ -1012,7 +1016,7 @@
           <div class="footer-nav">
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
-                <a href="#hero" class="footer-nav-link">Home</a>
+                <a href="#home" class="footer-nav-link">Home</a>
               </li>
               <li class="footer-nav-item">
                 <a href="#mission" class="footer-nav-link">Mission</a>
@@ -1040,6 +1044,7 @@
                 <a
                   href="https://www.facebook.com/"
                   class="footer-contacts-link"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <svg width="32" height="32" class="footer-contacts-icon">
                     <use href="./images/icons.svg#Facebook" />
@@ -1050,6 +1055,7 @@
                 <a
                   href="https://www.instagram.com/"
                   class="footer-contacts-link"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <svg width="32" height="32" class="footer-contacts-icon">
                     <use href="./images/icons.svg#Instagram" />
@@ -1057,7 +1063,7 @@
                 </a>
               </li>
               <li class="footer-contacts-item">
-                <a href="https://x.com/" class="footer-contacts-link">
+                <a href="https://x.com/" class="footer-contacts-link" target="_blank" rel="noopener noreferrer">
                   <svg width="32" height="32" class="footer-contacts-icon">
                     <use href="./images/icons.svg#X" />
                   </svg>
@@ -1067,6 +1073,7 @@
                 <a
                   href="https://www.linkedin.com/"
                   class="footer-contacts-link"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <svg width="32" height="32" class="footer-contacts-icon">
                     <use href="./images/icons.svg#LinkedIn" />
@@ -1074,7 +1081,7 @@
                 </a>
               </li>
               <li class="footer-contacts-item">
-                <a href="https://www.youtube.com/" class="footer-contacts-link">
+                <a href="https://www.youtube.com/" class="footer-contacts-link" target="_blank" rel="noopener noreferrer">
                   <svg width="32" height="32" class="footer-contacts-icon">
                     <use href="./images/icons.svg#Youtube" />
                   </svg>
