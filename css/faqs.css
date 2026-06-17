@@ -1,11 +1,12 @@
 .faqs{
     background-color: #5e8a4d;
-    padding: 64px 16px;
+    
 }
 .faq-container{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 64px 16px;
 }
 .faq-title{
     margin-bottom: 16px;
@@ -16,10 +17,15 @@
     font-size: 18px;
 }
 .faq-list{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .faq-item{
+    width: 100%;
     padding: 16px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -45,8 +51,9 @@
     height: 9.5px;
 }
 @media screen and (min-width: 768px){
-    .faqs {
-        padding: 80px, 32px;
+
+    .faq-container{
+        padding: 80px 32px;
     }
     .faq-title{
         margin-bottom: 24px;
@@ -68,7 +75,7 @@
     }
     
     .faq-list-container{
-        flex-grow: 1;
+        width: 100%;
     }
     .faq-list{
         width: 100%;
