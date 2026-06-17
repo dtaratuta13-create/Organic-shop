@@ -1,4 +1,13 @@
+@import './header.css';
+@import './hero.css';
+@import './mission.css';
+@import './benefits.css';
+@import './assortmens.css';
+@import './feedbacks.css';
+@import './faqs.css';
 @import './contact.css';
+@import './footer.css';
+
 /* =========================
    RESET
 ========================= */
