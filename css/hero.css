@@ -1,7 +1,5 @@
 .hero {
     min-width: 320px;
-    max-width: 375px;
-    max-height: 630px;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #000;
@@ -163,11 +161,10 @@
 /* Десктопная версия (≥1158px) */
 @media (min-width: 1158px) {
     .hero {
-        max-width: 1440px;
-        max-height: 600px;
         width: 100%;
+        max-width: none;
+        max-height: 600px;
         margin: 0 auto;
-        margin-left: auto;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)),
             url(../images/Hero1xdesktop.jpg);
