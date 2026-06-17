@@ -46,8 +46,7 @@
 }
 
 .feedbacks-item {
-    background-color: #FFFFFF;
-    border: 1px solid #010400;
+    border: 1px solid #0104001A;
     padding: 32px;
     display: flex;
     flex-direction: column;
