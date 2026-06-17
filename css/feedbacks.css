@@ -7,8 +7,8 @@
 .feedbacks .container {
     min-width: 320px;
     max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -48,10 +48,12 @@
 .feedbacks-item {
     background-color: #FFFFFF;
     border: 1px solid #010400;
-    border-radius: 20px;
     padding: 32px;
     display: flex;
     flex-direction: column;
+    max-width: 343px;
+    min-width: 300px;
+    height: 314px;
 }
 
 .rating-stars-list {
@@ -125,6 +127,11 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
         row-gap: 24px;
+        align-items: stretch;
+    }
+
+    .feedbacks-item {
+        max-width: 340px;
     }
 }
 
@@ -144,5 +151,9 @@
         grid-template-columns: repeat(4, 1fr);
         column-gap: 24px;
         row-gap: 24px;
+    }
+
+    .feedbacks-item {
+        max-width: 310px;
     }
 }
