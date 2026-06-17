@@ -170,7 +170,8 @@ button:hover {
 }
 
 .mobile-menu-container {
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
   height: 812px;
 
   background-color: #5e8a4d;
@@ -225,7 +226,7 @@ button:hover {
 }
 
 .mobile-menu-order-btn {
-  width: 343px;
+  width: 100%;
 }
 
 /* =========================
